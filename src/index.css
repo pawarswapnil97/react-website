@@ -1,13 +1,262 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+
+.top_title{
+  color: #fe5619;
+  font-weight: bold;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Menu bar  */
+.logo{
+  position: absolute;
+  z-index: 9999;
+}
+.sicon{
+  padding: 7px 9px;
+  background-color: #faebd75e;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  font-size: 14px;
+  color: dimgray;
+  transition: all 0.5s ease-in-out;
+}
+.sicon:hover{
+  background-color:#fe5619;
+  color: white;
+  cursor: pointer;
+}
+.main{
+  background-color: #eee;
+ 
+}
+
+/* Navbar  */
+.navbar{
+
+  padding:3px;
+}
+.menubar{
+  background-color: #e9dbc8;
+}
+
+.nav-item{
+  margin-left:22px !important;
+  
+ 
+}
+ .active{
+  background-color: #fe5619 ;
+  color: white !important;  
+}
+a{
+  color: black;
+  padding: 14px 11px;
+  font-size: 14px;
+  font-weight: 600;
+
+}
+a:hover{
+  color: white;
+  text-decoration: none;
+ 
+}
+.navbar-light .navbar-toggler {
+  position: relative;
+  right: -83%;
+}
+/* Home page */
+.home{
+  background-image: url(../public/Img/slider1.png);
+  background-size: 100% 100%;
+  height: 700px;
+}
+.slide1{
+  position: relative;
+  top: 200px;
+ 
+}
+.startbtn{
+  background-color: #e74c14;
+  border: none;
+  height: 45px;
+  width: 178px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.sbox{
+  border-radius: 20px !important;
+  position: relative;
+  top: -70px;
+  transition: all 0.7s ease-in-out;
+}
+.sbox:hover{
+  background-color: #fe5619;
+  color: white;
+  cursor: pointer;
+}
+.tag{
+  color: #fe5619;
+  font-weight: bold;
+}
+
+
+ 
+ /* About section */
+ .apara{
+  line-height: 30px;
+  word-spacing:2px;
+}
+/* Contact section */ 
+ 
+.cicon{
+  font-size:20px;
+ color: #fe5619;
+ float: left;
+ margin-right: 30px;
+ border: 1px solid rgba(128, 128, 128, 0.521);
+padding: 11px 16px;
+border-radius: 50%;
+}
+.ctext{
+margin-left:81px;
+
+}
+input{
+  width: 49%;
+  border: none;
+  background-color: rgba(220, 220, 220, 0.596);
+  height: 55px;
+  border-radius: 10px;
+  outline: none;
+  text-indent: 20px;
+  margin-right: 6px;
+  margin-top: 20px;
+}
+.msg{
+ width: 100%;
+ height: 100px;
+
+}
+.submit{
+  border: 1px solid white;
+  background-color: #fe5619;
+  color: white;
+  width: 170px;
+  height: 46px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+/* Service */
+.servicebox{
+  height: 300px;
+  border-radius: 20px;
+  background-color: rgba(238, 238, 238, 0.226);
+  transition: all 0.5s ease-in-out;
+}
+.servicebox:hover{
+  box-shadow: 0px 0px 15px 2px  rgba(128, 128, 128, 0.534);
+}
+.serviceicon{
+  color: #fe5619;
+}
+.sbanner{
+  background-image: url(../public/Img/sbanner.jpg);
+  height: 400px;
+  background-size: 100% 100%;
+}
+.scomputer{
+  background-image: url(../public/Img/scomputer.png);
+  background-repeat: no-repeat;
+  height:400px;
+
+}
+
+/* Blog */
+
+.readbtn{
+  background-color: #ff4400;
+  color: white;
+  padding:9px 17px;
+  border: none;
+}
+.blog{
+  background-color: #f5f8f9;
+}
+.blogbox:hover h5{
+  color: #ff4400;
+}
+
+/* price */
+.pricebtn{
+  background-color: #fe5619;
+  color: white;
+  border-radius: 20px;
+  padding-left: 20px;
+  border: 1px solid #e74c14;
+}
+.pricelist{
+  list-style-type: none;
+}
+.pricelist li{
+  margin-top: 5px;
+}
+.pricehead{
+  color: #fe5619;
+  font-weight: bold;
+}
+.pricecard{
+  border: none;
+  box-shadow: 0px 0px 7px 2px rgba(128, 128, 128, 0.384);
+}
+.chead{
+  background-color:#ff4400;
+  color: white;
+}
+.card2{
+  margin-top: -50px;
+}
+
+/* work */
+.workimg:hover{
+  z-index: 9999;
+  position: relative !important; 
+  background-color: #e74c14;
+  transition: all 0.7s ease-in-out;
+
+}
+
+
+/* Team  */
+
+.teaminfo{
+  width:90%;
+  margin-left: 10px;
+  position: relative;
+  top: -170px;
+  height: 150px;
+  background-color: rgba(0,0,0,.6);
+  color: white;
+  display: none;
+  transition: all 0.7s ease-in-out;
+}
+
+.team:hover .teaminfo{
+  display: block;
+ 
+}
+
+
+.ticon{
+  padding: 7px 9px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  font-size: 14px;
+  color:#fa5317de;
+  left: -20px;
+  transition: all 0.5s ease-in-out;
 }
